@@ -15,7 +15,7 @@ function App() {
   };
   return (
     <div className="main-container">
-      <input value={inputvalue} readOnly className="input-box" />
+      <input placeholder="0" value={inputvalue} readOnly className="input-box" />
       <div className="button-items">
         <button className="clear" onClick={inputClear}>C</button>
         <button className="clear">D</button>
