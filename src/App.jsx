@@ -38,7 +38,7 @@ function App() {
         <button onClick={() => inputHandler("+")}>+</button>
 
         <button onClick={() => inputHandler(0)}>0</button>
-        <button onClick={() => inputHandler(".")}>.</button>
+        <button onClick={() => inputHandler(".")}>,</button>
         <button onClick={calculate} className="equal">=</button>
       </div>
     </div>
