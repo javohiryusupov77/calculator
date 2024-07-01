@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main-container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.input-box {
+  background-color: #000;
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.button-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background-color: #505050;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  animation: buttonPop 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #606060;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:nth-child(4n) {
+  background-color: #ff9500;
+}
+
+button:nth-child(4n):hover {
+  background-color: #ffb700;
+}
+
+.equal {
+  background-color: #ff9500;
+  grid-column: span 2;
+}
+
+.equal:hover {
+  background-color: #ffb700;
+}
+
+.clear {
+  background-color: red;
+ 
+}
+
+.clear:hover {
+  background-color: darkred;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes buttonPop {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
