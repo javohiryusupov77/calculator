@@ -11,7 +11,7 @@ body {
 }
 
 .main-container {
-  background-color: #333;
+  background-color: black;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -19,20 +19,18 @@ body {
   height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   animation: fadeIn 1s ease-in-out;
 }
 
 .input-box {
-  background-color: #000;
   color: #fff;
-  font-size: 2em;
+  font-size: 3.5em;
   text-align: right;
-  padding: 20px;
   border: none;
   border-radius: 10px;
-  margin-bottom: 20px;
   animation: fadeIn 1s ease-in-out;
+    background-color: black;
 }
 
 .button-items {
@@ -42,12 +40,12 @@ body {
 }
 
 button {
-  background-color: #505050;
+  background-color: rgb(61, 58, 58);
   border: none;
   color: #fff;
   font-size: 1.5em;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.1s;
   animation: buttonPop 0.5s ease-in-out;
@@ -72,6 +70,7 @@ button:nth-child(4n):hover {
 .equal {
   background-color: #ff9500;
   grid-column: span 2;
+  border-radius: 25px;
 }
 
 .equal:hover {
@@ -79,12 +78,12 @@ button:nth-child(4n):hover {
 }
 
 .clear {
-  background-color: red;
+  background-color: grey;
  
 }
 
 .clear:hover {
-  background-color: darkred;
+    background-color: rgb(167, 161, 161);
 }
 
 /* Animations */

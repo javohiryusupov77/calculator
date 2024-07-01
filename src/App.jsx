@@ -18,14 +18,14 @@ function App() {
       <input value={inputvalue} readOnly className="input-box" />
       <div className="button-items">
         <button className="clear" onClick={inputClear}>C</button>
-        <button className="">D</button>
-        <button onClick={() => inputHandler("%")}>%</button>
+        <button className="clear">D</button>
+        <button className="clear" onClick={() => inputHandler("%")}>%</button>
         <button onClick={() => inputHandler("/")}>/</button>
 
         <button onClick={() => inputHandler(1)}>1</button>
         <button onClick={() => inputHandler(2)}>2</button>
         <button onClick={() => inputHandler(3)}>3</button>
-        <button onClick={() => inputHandler("*")}>*</button>
+        <button onClick={() => inputHandler("*")}>x</button>
 
         <button onClick={() => inputHandler(4)}>4</button>
         <button onClick={() => inputHandler(5)}>5</button>
